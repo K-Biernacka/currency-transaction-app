@@ -1,0 +1,48 @@
+body {
+    padding: 20px;
+}
+
+.currency-rate-input {
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: text-top;
+    align-items: baseline;
+}
+#confirm-rate {
+    display: flex;
+}
+
+.rate-box {
+    color: red;
+    font-size: 20px;
+}
+
+#transaction-form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.list-item {
+    width: 645px;
+}
+
+.transaction-name {
+    margin-right: 2px;
+}
+.amount {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.add-button {
+    margin-left: 2px;
+}
+
+.columns {
+    display: flex;
+}
+
+.columns > div {
+    flex: 1;
+}

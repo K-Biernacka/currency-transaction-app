@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application for currency transaction</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<div class="currency-rate-input">
+    <div class="information">Please enter current rate EUR/PLN</div>
+    <form id="confirm-rate">
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" class="form-control" id="inputRate" placeholder="Current rate">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Confirm</button>
+    </form>
+</div>
+<div class="rate-box">
+1 EUR0 =
+    <span id="final-rate"></span>
+</div>
+<div class="columns">
+    <div>
+        <div class="currency-transaction-input">
+            <form id="transaction-form">
+                <input class="form-control col-6 transaction-name" id="transaction" type="text" placeholder="Name of transaction">
+                <input class="form-control col-1 amount" type="text" placeholder="EUR">
+                <button type="submit" class="btn btn-primary add-button">Add</button>
+            </form>
+        </div>
+        <div id="transaction-list">
+
+        </div>
+    </div>
+    <div>
+        Prawa strrona
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
