@@ -1,7 +1,6 @@
 body {
     padding: 20px;
 }
-
 .currency-rate-input {
     display: flex;
     justify-content: flex-end;
@@ -11,23 +10,17 @@ body {
 #confirm-rate {
     display: flex;
 }
-
 .rate-box {
     color: red;
     font-size: 20px;
 }
-
 #transaction-form {
     display: flex;
     justify-content: flex-start;
 }
-
-
-
 .list-item {
     width: 645px;
 }
-
 .transaction-name {
     margin-right: 2px;
 }
@@ -38,11 +31,14 @@ body {
 .add-button {
     margin-left: 2px;
 }
-
 .columns {
     display: flex;
 }
-
 .columns > div {
     flex: 1;
+}
+#transaction-list {
+    height: 500px;
+    overflow: scroll;
+    padding: 15px 0px 15px 0px;
 }
