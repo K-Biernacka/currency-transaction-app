@@ -9,24 +9,35 @@ document.getElementById('confirm-rate').addEventListener('submit', function(even
 document.getElementById('transaction-form').addEventListener('submit', function(event) {
     event.preventDefault();
     let input = document.getElementById('transaction');
-    if (input.value) addItemToList(input.value);
-    input.value = '';
+    let amount = document.getElementById('amount');
+    if (input.value && amount.value) {
+        addItemToList(input.value, amount.value);
+        input.value = '';
+        amount.value = '';
+    }
+
 } );
 
-
-let addItemToList = (text) => {
+let addItemToList = (text, amountInEur) => {
     let list = document.getElementById('transaction-list');
     let item = document.createElement('div');
     item.innerText = text;
     item.className = 'justify-content-between d-flex list-item';
     let button = document.createElement('div');
+    let amount = document.createElement('div');
+    amount.innerText = amountInEur;
     button.addEventListener('click', function(event) {
         item.remove();
     });
 
     button.className = 'btn';
     button.setAttribute('type', 'submit');
-    item.appendChild(button);
+
     list.appendChild(item);
+    item.appendChild(amount);
+    item.appendChild(button);
+
 };
+
+
 
