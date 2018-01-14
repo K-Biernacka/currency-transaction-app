@@ -44,5 +44,7 @@ body {
 }
 .button-delete {
     color: red;
-
+}
+#biggest-amount {
+    margin-top: 20px;
 }
